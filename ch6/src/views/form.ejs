@@ -1,0 +1,25 @@
+<%- include("./partials/head.ejs") %>
+<div class="container">
+  <form action="/process-form" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="mb-3">
+      <label for="name" class="form-label">Your name</label>
+      <input type="text" name="name" class="form-control" id="name" aria-describedby="yourName">
+      <div class="form-text">Introduce your name please</div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="password">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="checkbox">
+      <label class="form-check-label" for="checkbox">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<%- include("./partials/foot") %>
